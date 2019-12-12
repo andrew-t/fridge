@@ -61,7 +61,7 @@ function startGame() {
 		reporters.push(new Reporter(!!(i & 1)));
 	boris = new Boris(fridges, reporters);
 	score.reset();
-	toast('Prime Minister refuses to be interviewed');
+	toast('Prime Minister refuses to be interviewed by Andrew Neil');
 }
 
 // the main handler

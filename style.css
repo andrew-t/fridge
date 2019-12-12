@@ -119,8 +119,8 @@ body { overflow: hidden; }
 	padding: 1vw 10vw;
 	box-sizing: border-box;
 	height: 9vw;
-	font-size: 4vw;
-	line-height: 4.5vw;
+	font-size: 3vw;
+	line-height: 3.5vw;
 }
 
 .fresh #title-card { display: block; }
