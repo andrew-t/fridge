@@ -36,9 +36,11 @@ export default class Fridge extends Sprite {
 	}
 
 	userInput(delta) {
-		this.x += controls.v * speed * delta;
-		if (this.x > 100) this.x = 100;
-		if (this.x < 0) this.x = 0;
+		if (!this.inFridge) {
+			this.x += controls.v * speed * delta;
+			if (this.x > 100) this.x = 100;
+			if (this.x < 0) this.x = 0;
+		}
 		if (!this.inFridge && controls.fridge)
 			for (const fridge of this.fridges)
 				if (this.isNear(fridge)) {
