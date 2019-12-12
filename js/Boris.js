@@ -78,14 +78,20 @@ export default class Fridge extends Sprite {
 
 	asphyxiate() {
 		this.oxygen = 0;
-		this.dead = true;
+		this.kill();
 		toast('Prime Minister asphyxiates in fridge');
 	}
 
 	freeze() {
 		this.temperature = 0;
-		this.dead = true;
+		this.kill();
 		toast('Prime Minister freezes to death in a fridge');
+	}
+
+	kill() {
+		this.dead = true;
+		for (const reporter of this.reporters)
+			reporter.gameOver = true;
 	}
 
 	checkForFailure(delta) {
@@ -97,7 +103,7 @@ export default class Fridge extends Sprite {
 					this.polls -= interviewPenalty;
 					if (this.polls <= 0) {
 						this.polls = 0;
-						this.dead = true;
+						this.kill();
 						toast('Corbyn predicted to form minority government');
 					}
 				}

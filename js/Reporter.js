@@ -42,7 +42,7 @@ export default class Reporter extends Sprite {
 		this.x += this.v * delta;
 		if (this.x * Math.sign(this.v) - 50 > 100) {
 			this.x *= -1;
-			if (this.active)
+			if (this.active && !this.gameOver)
 				score.increment();
 			else
 				this.unhit();
