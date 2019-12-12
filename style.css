@@ -151,4 +151,5 @@ body:before {
 	bottom: 0;
 	background: #cdc;
 	content: '';
+	border-top: 0.3vw solid black;
 }
