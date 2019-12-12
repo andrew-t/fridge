@@ -51,10 +51,12 @@ window.addEventListener('keyup', e => {
 function startGame() {
 	document.body.classList.remove('fresh');
 	document.getElementById('board').innerHTML = '';
+	fridges = [];
 	for (let i = 0; i < fridgeCount; ++i)
 		fridges.push(new Fridge(
 			100 * (i + 0.5) / (fridgeCount + 1)
 		));
+	reporters = [];
 	for (let i = 0; i < reporterCount; ++i)
 		reporters.push(new Reporter(!!(i & 1)));
 	boris = new Boris(fridges, reporters);
