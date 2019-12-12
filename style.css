@@ -76,7 +76,7 @@ body { overflow: hidden; }
 }
 
 #temperature { background: #f00; }
-#oxygen { background: #28f; }
+#oxygen { background: #cef; }
 #polls { background: #00f; }
 
 #toast-container {
