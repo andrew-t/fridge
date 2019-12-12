@@ -11,8 +11,8 @@ const questions = [
 	'Why did you promise 40 hospitals if you only plan to build 6?',
 	'Why have you allowed a border in the Irish Sea?',
 	'How can you "get Brexit done"?',
-	'You say you oppose austerity so why do you plan so much of it?',
-	'Why isn\'t you promised social care plan in the manifesto?'
+	'You say you oppose austerity, so why do you plan so much of it?',
+	'Why isn\'t your promised social care plan in the manifesto?'
 ];
 
 export default class Reporter extends Sprite {
